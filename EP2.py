@@ -15,7 +15,7 @@ def preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho):
     else:
         frota[nome_navio] = [posicoes]
     return frota
-
+# embarcações afundadas?
 def afundados(frota, tabuleiro):
     afundados = 0
     for tipo, navios in frota.items():
