@@ -15,3 +15,11 @@ def preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho):
     else:
         frota[nome_navio] = [posicoes]
     return frota
+
+def afundados(frota, tabuleiro):
+    afundados = 0
+    for tipo, navios in frota.items():
+        for navio in navios:
+            if all(tabuleiro[x][y] == 'X' for x, y in navio):
+                afundados += 1
+    return afundados
