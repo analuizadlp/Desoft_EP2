@@ -62,3 +62,16 @@ def posicao_valida(frota, linha, coluna, orientacao, tamanho):
     if frota == {}:
         return True 
     return True
+# Posicionando Frota e adicionando frota oponente
+frota_oponente = {
+    'porta-aviões': [
+        [[9, 1], [9, 2], [9, 3], [9, 4]]
+    ],
+    'navio-tanque': [
+        [[6, 0], [6, 1], [6, 2]],
+        [[4, 3], [5, 3], [6, 3]]
+    ],
+    'contratorpedeiro': [
+        [[1, 6], [1, 7]],
+        [[0, 5], [1, 5]],
+        [[3, 6], [3, 7]]]}
