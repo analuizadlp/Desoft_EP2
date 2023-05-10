@@ -24,14 +24,17 @@ def faz_jogada(tabuleiro, linha, coluna):
     return tabuleiro
 #posiciona frota 
 def posiciona_frota(frota):
-    grid = [[0 for _ in range(10)] for _ in range(10)]
+    grid = [0] * 10
+    for i in range (len(grid)):
+        grid[i] = [0] * 10 
+    for p_embarcacao in frota.values():
+        for t in p_embarcacao:
+            for i in t:
+                linha = i[0]
+                coluna = i[1]
+                grid[linha][coluna] = 1 
+    return grid 
 
-    for tipo_navio, lista_posicoes in frota.items():
-        for posicoes in lista_posicoes:
-            for linha, coluna in posicoes:
-                grid[linha][coluna] = 1
-
-    return grid
 # embarcações afundadas?
 def afundados(frota, tabuleiro):
     afundados = 0
