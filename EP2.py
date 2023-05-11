@@ -127,7 +127,7 @@ for nome in frota.keys():
 tabuleiro_oponente = posiciona_frota(frota_oponente)
 
 
-def monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente, frota, frota_oponente):
+def monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente):
     texto = ''
     texto += '   0  1  2  3  4  5  6  7  8  9         0  1  2  3  4  5  6  7  8  9\n'
     texto += '___________      ___________\n'
