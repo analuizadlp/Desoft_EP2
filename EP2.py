@@ -107,8 +107,8 @@ for nome in frota.keys():
         i = 4
     while n < i:
         print(f'Insira as informações referentes ao navio {nome} que possui tamanho {tamanho_frota[nome]}')
-        linha = int(input('Qual a linha'))
-        coluna = int(input('Qual a coluna'))
+        linha = int(input('Qual a linha?'))
+        coluna = int(input('Qual a coluna?'))
         if nome !='submarino':
             direcao = input('[1] Vertical [2] Horizontal')
         if nome == 'submarino':
